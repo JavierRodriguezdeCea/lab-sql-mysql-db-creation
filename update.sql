@@ -1,11 +1,13 @@
-UPDATE customers
-SET - = ppicasso@gmail.com
-WHERE Name = Pablo Picasso
+USE lab_mysql;
 
 UPDATE customers
-SET - = lincoln@us.gov
-WHERE Name = Abraham Lincoln
+SET cust_email = 'ppicasso@gmail.com'
+WHERE cust_name  = 'Pablo Picasso';
 
 UPDATE customers
-SET - = hello@napoleon.me
-WHERE Name = Napoleon Bonaparte
+SET cust_email = 'lincoln@us.gov'
+WHERE cust_name  = 'Abraham Lincoln';
+
+UPDATE customers
+SET cust_email = 'hello@napoleon.me'
+WHERE cust_name  = 'Napoleon Bonaparte';
