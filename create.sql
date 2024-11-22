@@ -4,11 +4,11 @@ USE lab_mysql;
 
 DROP TABLE IF EXISTS cars;
 CREATE TABLE IF NOT EXISTS cars (
-	id_car INT,
-	vin INT PRIMARY KEY NOT NULL,
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	vin INT NOT NULL,
     manufacturer VARCHAR(50),
     model VARCHAR(50),
-    year_date DATE,
+    year_date SMALLINT UNSIGNED NOT NULL,
     color VARCHAR(50)
 );
 
@@ -41,5 +41,5 @@ CREATE TABLE IF NOT EXISTS invoices (
     salesperson INT,
     FOREIGN KEY (customer) REFERENCES customers(customer_id),
 	FOREIGN KEY (salesperson) REFERENCES salespersons(staff_id),
-    FOREIGN KEY (car) REFERENCES cars(vin)
+    FOREIGN KEY (car) REFERENCES cars(id)
 );

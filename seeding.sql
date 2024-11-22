@@ -24,8 +24,8 @@ INSERT INTO salespersons (staff_id, name_staff, store) VALUES
 (00008, 'Shonda Leer', 'São Paulo');
 
 INSERT INTO invoices (invoice_number, date_day) VALUES
-(852399038, '2018-08-22'),
-(731166526, '2018-12-31'),
-(271135104, '2019-01-22');
+(852399038, '2018-08-22', 1, 1 ,3),
+(731166526, '2018-12-31', 3, 3, 5),
+(271135104, '2019-01-22', 2, 2, 7);
         
 
